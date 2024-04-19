@@ -7,14 +7,23 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "eslint": "^8.57.0",
     "@repo/eslint-config": "*",
+    "eslint": "^8.57.0",
     "prettier": "^3.2.5",
+    "tsx": "^4.7.2",
     "turbo": "latest"
   },
   "packageManager": "yarn@1.22.19",
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@apollo/server": "^4.10.4",
+    "express": "^4.19.2",
+    "graphql": "^16.8.1",
+    "server": "^1.0.39",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  }
 }
